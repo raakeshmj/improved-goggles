@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Nexusgaming</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body style="font-family: 'Poppins', sans-serif; background-color: #f0f0f0; color: #333;">
+
+    <section class="sub-header" style="background-color: #fff; padding: 20px 0;">
+        <nav style="display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
+            <a href="index.html"><img src="mainlogo.png" alt="Nexusgaming Logo" style="width: 150px;"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" style="font-size: 24px; cursor: pointer;"></i>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="display: inline-block; margin-right: 10px;"><a href="index.html" style="text-decoration: none; color: #333;">HOME</a></li>
+                    <li style="display: inline-block; margin-right: 10px;"><a href="about.html" style="text-decoration: none; color: #333;">ABOUT</a></li>
+                    <li style="display: inline-block; margin-right: 10px;"><a href="games.html" style="text-decoration: none; color: #333;">GAMES</a></li>
+                    <li style="display: inline-block; margin-right: 10px;"><a href="ourteam.html" style="text-decoration: none; color: #333;">OUR TEAM</a></li>
+                    <li style="display: inline-block;"><a href="contact.html" style="text-decoration: none; color: #333;">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" style="font-size: 24px; cursor: pointer;"></i>
+        </nav>
+        <h1 style="text-align: center; margin: 20px 0; font-size: 36px;">Sign Up</h1>
+    </section>
+
+    <section class="signup-section" style="padding: 50px 0;">
+        <div class="signup-container" style="max-width: 800px; margin: auto; background-color: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <div class="signup-form" style="padding: 20px;">
+                <h2 style="margin-bottom: 20px; font-size: 24px;">Create an Account</h2>
+                <form style="margin-bottom: 20px;">
+                    <div class="form-control" style="margin-bottom: 20px;">
+                        <label for="username" style="display: block; font-size: 16px; margin-bottom: 5px;">Username</label>
+                        <input type="text" id="username" placeholder="Enter your username" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    </div>
+                    <div class="form-control" style="margin-bottom: 20px;">
+                        <label for="email" style="display: block; font-size: 16px; margin-bottom: 5px;">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    </div>
+                    <div class="form-control" style="margin-bottom: 20px;">
+                        <label for="password" style="display: block; font-size: 16px; margin-bottom: 5px;">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    </div>
+                    <div class="form-control" style="margin-bottom: 20px;">
+                        <label for="confirm-password" style="display: block; font-size: 16px; margin-bottom: 5px;">Confirm Password</label>
+                        <input type="password" id="confirm-password" placeholder="Confirm your password" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    </div>
+                    <button type="submit" class="btn-signup" style="background-color: #f44336; color: #fff; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px;">Sign Up</button>
+                </form>
+            </div>
+            <div class="login-section" style="text-align: center; padding: 20px;">
+                <h3 style="margin-bottom: 10px; font-size: 18px;">Already have an account?</h3>
+                <p style="margin-bottom: 20px;">Login to access your account and enjoy our services.</p>
+                <a href="contact.html" class="btn-login" style="background-color: #333; color: #fff; text-decoration: none; padding: 10px 20px; font-size: 16px; border-radius: 5px;">Login</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" style="background-color: #333; color: #fff; text-align: center; padding: 30px 0;">
+        <div class="footer-content">
+            <h4>About Us</h4>
+            <p>At Nexusgaming Co, we are passionate pioneers in the realm of interactive entertainment. With a commitment to delivering unparalleled gaming experiences, we strive to push the boundaries of creativity and innovation. Our diverse team of visionaries, developers, and storytellers collaborate to craft immersive worlds and captivating gameplay that resonate with players worldwide.</p>
+        </div>
+        <div class="social-icons">
+            <a href="#" class="fa fa-facebook" style="text-decoration: none; color: #fff; margin-right: 10px;"></a>
+            <a href="#" class="fa fa-instagram" style="text-decoration: none; color: #fff; margin-right: 10px;"></a>
+            <a href="#" class="fa fa-twitter" style="text-decoration: none; color: #fff; margin-right: 10px;"></a>
+            <a href="#" class="fa fa-linkedin" style="text-decoration: none; color: #fff;"></a>
+        </div>
+        <p>Made By <i class="fa fa-heart-o">Sidhdi Raakesh Ananya Ashin</i></p>
+    </footer>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

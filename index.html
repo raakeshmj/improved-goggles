@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title>NexusGaming Co</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="mainlogo.png" alt="Image/mainlogo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="games.html">GAMES</a></li>
+                        <li><a href="ourteam.html">OUR TEAM</a></li>
+                        <li><a href="contact.html">LOGIN</a></li>
+
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+
+            </nav>
+        <div class="text-box">
+            <h1>Worlds Best Gaming Platform</h1>
+            <P>Welcome to GoGamesGo, your ultimate destination for endless fun and excitement! Dive into a world of captivating games that will keep you entertained for hours on end. With a diverse collection of thrilling options, there's something here for every gamer, whether you're a casual player or a seasoned pro.<br> Join the adventure today and let the gaming journey begin!</P>
+            <a href="" class="hero-btn">Visit Us To know More</a>
+        </div>
+
+        </section>
+
+<!------------------Games-------------------------------------------------->
+<section class="games">
+    <h1>Game Hub</h1>
+    <p>Welcome to GoGamesGo - Where Every Click Leads to Fun!</p>
+    <div class="row">
+        <div class="games-col">
+            <h3>Beginners</h3>
+            <p>Beginner games are the perfect starting point for those new to gaming or looking for a relaxed experience. Designed with simplicity and enjoyment in mind, these games provide easy-to-understand mechanics and gentle learning curves. From classic arcade-style adventures to charming puzzles and intuitive controls, beginner games offer a welcoming introduction to the world of gaming, inviting players of all ages to dive in and have fun from the very first click. </p>
+        </div>
+        <div class="games-col">
+            <h3>Intermediate</h3>
+            <p>Intermediate games offer the perfect blend of challenge and accessibility, catering to both casual players and those seeking a bit more depth. With engaging mechanics and increasing complexity, these games provide a rewarding experience for players looking to hone their skills and embark on a journey of mastery. </p>
+        </div>
+        <div class="games-col">
+            <h3>Advance</h3>
+            <p>"Advanced games push the boundaries of gaming excellence, offering complex challenges and immersive experiences for seasoned players seeking the ultimate thrill. With intricate mechanics, strategic depth, and high levels of difficulty, these games provide a platform for mastery and skill refinement. From epic adventures with branching narratives to competitive multiplayer arenas demanding precision and strategy, advanced games cater to the relentless pursuit of gaming excellence, inviting players to test their limits and embark on unforgettable journeys.</p>
+        </div>
+    </div>
+</section>
+<!-------trending games-------->
+<section class="location">
+    <h1>Trending Games</h1>
+    <p>Our trending games of the week!</p>
+    <div class="row">
+        <div class="location-col">
+            <img src="game1.png">
+            <div class="layer">
+                
+            </div>
+        </div>
+        <div class="location-col">
+            <img src="game.png">
+            <div class="layer">
+              
+            </div>
+        </div>
+        <div class="location-col">
+            <img src="game2.png">
+            <div class="layer">
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!------Top players------->
+<section class="facilities">
+    <h1>Our Top Players</h1>
+    
+    <div class="row">
+        <div class="facilities-col">
+            <img src="g.png">
+            <h3>@DYLANZ</h3>
+            <p>TOP 3</p>
+        </div>
+        <div class="facilities-col">
+            <img src="g1.png">
+            <h3>@ARIAXX</h3>
+            <p>TOP 3</p>
+        </div>
+        <div class="facilities-col">
+            <img src="g2.png">
+            <h3>@TWIZ</h3>
+            <p>TOP 3</p>
+        </div>
+    </div>
+</section>
+<!-----feedback------------>
+<section class="feedback">
+    <h1>Feedbacks</h1>
+    <p>Our valued customer feedbacks</p>
+
+<div class="row">
+    <div class="feedback-col">
+        <img src="girl.png">
+        <div>
+            <p>This is the best gaming website ever!</p>
+            <h3>Haley</h3>
+           
+
+        </div>
+    </div>
+    <div class="feedback-col">
+        <img src="boy.png">
+        <div>
+            <p>This is the best gaming website ever!</p>
+            <h3>Daniel</h3>
+           
+        </div>
+    </div>
+</div>
+</section>
+<!----call to action-->
+
+<!---Footer --->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>At Nexusgaming Co, we are passionate pioneers in the realm of interactive entertainment. With a commitment to delivering unparalleled gaming experiences, we strive to push the boundaries of creativity and innovation. Our diverse team of visionaries, developers, and storytellers collaborate to craft immersive worlds and captivating gameplay that resonate with players worldwide. 
+    </p>
+    <div class="icon">
+       
+    </div>
+    <p>Made By <i class="fa fa-heart-o">Sidhdi Raakesh Ananya Ashin</i></p>
+</section>
+
+
+
+<!---------------------JavaScript------------------------------->
+        <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>
